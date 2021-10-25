@@ -112,9 +112,9 @@
             left: 0px;
             height: auto;
             width: 100%;}
-        .block-title-1::after{
+        .block-text-1::after{
             clear: both;}
-        .block-title-1::before{
+        .block-text-1::before{
             clear: both;}
         div.block-ex-1{
             z-index: 2;
@@ -204,15 +204,15 @@
             background-repeat: no-repeat;}
         .where::after{
             /* bullets */
-            content: url('http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png');
+            content: url(point.png);
             position: absolute;
-            left: 18px; /*adjust manually*/
-            top: 25px;}
+            left: 20px; /*adjust manually*/
+            top: 28px;}
         .where::before{
             content:"";
             position: absolute;
-            left: 27px; /* adjust manually */
-            top:33px;
+            left: 25px; /* adjust manually */
+            top:28px;
             border-left: 1px solid gray;
             height: 100px;
             width: 1px;}
@@ -225,7 +225,26 @@
             left: 0px;
             height: auto;
             width: 50%;}
+        .block-text-2::after{
+            clear: both;}
+        .block-text-2::before{
+            clear: both;}
         
+        div.block-ed-1{
+            z-index: 2;
+            position: absolute;
+            left: 0px;
+            height: 100px;
+            width: auto;}
+        div.block-ed-2{
+            z-index: 2;
+            position: absolute;
+            left: 0px;
+            top:160px;
+            height: 100px;
+            width: auto;}
+        
+
         div.block-text-3 {
             z-index: 3;
             position: absolute;
@@ -233,6 +252,24 @@
             right: 0px;
             height: auto;
             width: 50%;}
+        .block-text-3::after{
+            clear: both;}
+        .block-text-3::before{
+            clear: both;}
+        
+        div.block-aw-1{
+            z-index: 2;
+            position: absolute;
+            left: 0px;
+            height: 100px;
+            width: auto;}
+        div.block-aw-2{
+            z-index: 2;
+            position: absolute;
+            left: 0px;
+            top:160px;
+            height: 100px;
+            width: auto;}
         
 
     </style>
@@ -268,8 +305,8 @@
                     <div class="block-ex-1-1">
                         <ul class="experiences">                            
                             <li class="green">
-                              <div class="where" style="display: inline;">國立成功大學</div><h3 class="what green" style="display: inline;">碩士級研究員</h3><div class="when" style="display: inline;">&emsp;2021 - Present</div>
-                              <p class="description">智能材料與製程研究中心</p>
+                              <div class="where" style="display: inline;">National Cheng Kung University</div><h3 class="what green" style="display: inline;">Project Assistant (Full-time)</h3><div class="when" style="display: inline;">&emsp;2021 - Present</div>
+                              <p class="description">Smart Manufacturing and Material Research Center</p>
                             </li>
                         </ul>
                     </div>
@@ -280,8 +317,8 @@
                     <div class="block-ex-2-1">
                         <ul class="experiences">                            
                             <li class="green">
-                              <div class="where" style="display: inline;">國立中正大學</div><h3 class="what green" style="display: inline;">原子力顯微鏡技術操作員</h3><div class="when" style="display: inline;">&emsp;2018 - 2020</div>
-                              <p class="description">貴重儀器中心</p>
+                              <div class="where" style="display: inline;">National Chung Cheng University</div><h3 class="what green" style="display: inline;">AFM Operator</h3><div class="when" style="display: inline;">&emsp;2018 - 2020</div>
+                              <p class="description">Instruments Center of CCU (IC-CCU) - Atomic Force Microscope, AFM</p>
                             </li>
                         </ul>
                     </div>
@@ -292,8 +329,8 @@
                     <div class="block-ex-3-1">
                         <ul class="experiences">                            
                             <li class="green">
-                              <div class="where" style="display: inline;">恩德科技股份有限公司</div><h3 class="what green" style="display: inline;">實習生</h3><div class="when" style="display: inline;">&emsp;2017 - 2018</div>
-                              <p class="description">苗栗後龍廠電氣課</p>
+                              <div class="where" style="display: inline;">Anderson Industrial Corp.</div><h3 class="what green" style="display: inline;">Intern</h3><div class="when" style="display: inline;">&emsp;2017 - 2018</div>
+                              <p class="description">Department of Electrical</p>
                             </li>
                         </ul>
                     </div>
@@ -304,27 +341,48 @@
             
             <div class="block-text-2">
                 <p class="title">Education</p>
+                
                 <div class="block-ed-1">
                     <ul class="education">
-                        <li class="green">國立中正大學 機械工程學系 碩士</li>
-                        <li class="green">國立聯合大學 機械工程學系 學士</li>
+                        <li class="green">
+                            <div class="where">M.S. (Mechanical Engineering)</div>
+                            <p class="description">Department of Mechanical Engineering, National Chung Cheng University, Chiayi, Taiwan (R.O.C.)</p>
+                        </li>
                     </ul>
-
                 </div>
+
+                <div class="block-ed-2">
+                    <ul class="education">
+                        <li class="green">
+                            <div class="where">B.S. (Mechanical Engineering)</div>
+                            <p class="description">Department of Mechanical Engineering, National United University, Miaoli, Taiwan (R.O.C.)</p>
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
 
             <div class="block-text-3">
                 <p class="title">Awards</p>
-                <div class="block-ed-1">
-                    <ul class="education">
-                        <li class="green">中國機械工程學會 碩博士論文獎</li>
-                        <li class="green">科技部 未來科技獎</li>
+                <div class="block-aw-1">
+                    <ul class="awards">
+                        <li class="green">
+                            <div class="where">Chinese Society of Mechanical Engineers (CSME)</div>
+                            <p class="description">2021 Distinguished Master's Thesis Award</p>
+                        </li>
                     </ul>
-
                 </div>
 
+                <div class="block-aw-2">
+                    <ul class="awards">
+                        <li class="green">
+                            <div class="where">Ministry of Science and Technology (MOST)</div>
+                            <p class="description">2020 Future Tech Award - Smart Machinerynovel Materials</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </div>
 
     </div>
