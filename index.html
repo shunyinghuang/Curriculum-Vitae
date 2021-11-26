@@ -1,103 +1,76 @@
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script>
 
     </script>
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Pangolin&display=swap');
+        
 
-        div.block-title{
-            width:100%;
-            position: fixed;
-            height: 10%;
+        div.home{ 
+            z-index: 10; 
+            position: fixed; top:0px; left: 0px;
+            width: 18vw; height: 100vh;
             box-sizing: border-box;
-            background-color: white;
-            left: 0px;
-            top:0px;
-            background-color: black;}
-        div.block-title-1 {
-            z-index: 10;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            left: 0px;
-            top: 5%;
-            width: 100%;
-            height: 20%;
-            box-sizing: border-box;
-            background-color: white;
-        }
-
-        div.block-title-1-1 {
+            background-image: url(more-leaves-on-green.png);
+            border-right: 2px solid #707070;}
+        div.home #logo{
             z-index: 9;
-            position: fixed;
-            height: 20%;
-            width: 100%;
-            background-color: #0f3441;
-        }
-
-        .block-title-1-1 {
-            font-family: 'Pangolin', 'Noto Sans TC', cursive;
-            font-size: 50px;
-            color: white;
-            text-align: center;
-        }
-
-        div.block-content-1 {
-            z-index: 8;
-            position: relative;
-            left: 0px;
-            top: 25%;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* box-sizing: border-box; */
-            background-color: white;}
-        div.block-content-1-1 {
-            z-index: 7;
-            position: relative;
-            width: 80%;
-            height: 80%;
-            /* box-sizing: border-box; */
-            background-color: white;
-            border-left: 1px solid white;
-            border-right: 1px solid white;}
-
-
-        div.block-photo-1 {
-            z-index: 6;
-            position: absolute;
-            height: 250px;
-            width: 174px;
-            left: 0px;}
-        div.block-photo-1-1 {
+            position: relative; top:54px; left: 66.5px;
+            width: 100px; height: 77.76px; 
+            background-image:url(Icon\ awesome-home.png);}
+        
+        div.person{
+            z-index: 10;
+            position: fixed; top:0px; left:18vw;
+            width: 18vw; height: 100vh;
+            box-sizing: border-box;
+            background:white; }
+        div.person #frame{
+            z-index: 9;
+            position: relative; top:0px; left:2vw;
+            width: 14vw; height: 42vh;
+            background: rgba(2, 77, 42, 0.98); border: 1px solid #707070;}
+        div.filter {
             filter: drop-shadow(0px 1px 2px black);}
-        div.block-photo-1-1-1 {
-            position: absolute;
-            z-index: 5;
-            height: 250px;
-            width: 400px;
-            background-image: url(黃舜盈.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;}
-        div.block-photoinfo-1 {
-            z-index: 4;
-            position: absolute;
-            height: 250px;
-            width: 75%;
-            right: 5%;
-            /* border: 1px solid black; */
-            background-color: white;}
-        .name {
-            font-family: 'Noto Sans TC', cursive;
-            font-size: 32px;
-            font-weight: bolder;
-            word-spacing: 8px;
-            vertical-align: top;
-            color: #0f3441;}
+        div.person #photo{
+            z-index: 8;
+            position: absolute; top:5vh; left:2vw;
+            width: 10vw; height: 25vh;
+            background-image: url(黃舜盈.jpg);background-size: cover; background-repeat: no-repeat;
+            clip-path: ellipse(50% 45% at 50% 50%)}
+        div.person #phototext{
+            z-index: 9;
+            position:absolute; top: 28vh; left: 2vw;
+            font-family: "Segoe UI"; font-weight: normal; font-size: 20px; letter-spacing: 0.03em; line-height: 30px; text-align: center; color: #f6f2f2;}
+        div.person #contactinfo{
+            z-index: 9;
+            position: relative; top:2vh; left: 2vw;
+            font-family: "Nirmala UI"; font-weight: bold; font-size: 25px; letter-spacing: 0.03em; line-height: 30px; text-align: center; color: #000101;
+            width: 14vw; height: 50vh;}
+        #icon1{
+            position:absolute; top:7vh; left:0.7vw;
+            width:3.5vw; height: 6.5vh;
+            background-image: url(gmail.png); background-size: contain; background-repeat: no-repeat;}
+        #icon2{
+            position:absolute; top:7vh; left:5.2vw;
+            width:3.5vw; height: 6.5vh;
+            background-image: url(104.png); background-size: contain; background-repeat: no-repeat;}
+        #icon3{
+            position:absolute; top:7vh; left:9.7vw;
+            width:3.5vw; height: 6.5vh;
+            background-image: url(github.png); background-size: cover; background-repeat: no-repeat;}
+
+        div.content{
+            position: fixed; top:0vh; left:36vw;
+            width: 36vw; height: 100vh; 
+            background: #fff; 
+            box-sizing: border-box;
+            overflow: scroll;}
         .title {
             font-family: 'Noto Sans TC', cursive;
             font-size: 26px;
@@ -112,160 +85,114 @@
             word-spacing: 8px;
             line-height: 12px;
             color: gray;}
+        div.space{
+            position: fixed; top:0px; left: 72vw;
+            width: 28vw; height: 100vh;
+            box-sizing: border-box;
+            background-image: url(more-leaves-on-green.png);
+            border-left: 2px solid #707070; }
+
+        ul.experiences li.green{
+            list-style: none}
         
-        
-        div.block-text-1 {
-            z-index: 3;
-            position: absolute;
-            top: 280px;
-            left: 0px;
-            height: auto;
-            width: 100%;}
+        div.block-text-1{
+            position: relative;
+            top: 0vh;
+            left: 0vh;
+            height: 60vh;
+            width: auto;
+            border: 1px solid white;}
         .block-text-1::after{
             clear: both;}
         .block-text-1::before{
             clear: both;}
+
         div.block-ex-1{
-            z-index: 2;
             position: absolute;
-            left: 0px;
+            left: 0vw;
             box-sizing: border-box;
-            width: 100%;
+            width: auto;
             height: 100px;
-            align-items: center;
-            justify-content: center;}
-        div.block-ex-1-1{
-            z-index: 1;
-            position: absolute;
-            left: 0px;
-            box-sizing: border-box;
-            width: 750px;
-            height: 100px;}
-        div.block-ex-1-2{
-            z-index: 1;
-            position: absolute;
-            right: 0px;
-            box-sizing: border-box;
-            width: 300px;
-            height: 100px;
-            background-image: url(成功大學.png);
-            background-size: contain;
-            background-repeat: no-repeat;}
-        .where {
-                font-family:'Noto Sans TC', cursive;
-                font-size: 1.2857em; /* 18/16 -> 18px */
-                font-weight: 300;
-                display: inline;
-                margin-right: 0.5em;}
+            }
         div.block-ex-2{
-            z-index: 2;
             position: absolute;
             top:160px;
-            left: 0px;
+            left: 0vw;
             box-sizing: border-box;
-            width: 100%;
+            width: auto;
             height: 100px;
-            align-items: center;
-            justify-content: center;}
-        div.block-ex-2-1{
-            z-index: 1;
-            position: absolute;
-            left: 0px;
-            box-sizing: border-box;
-            width: 750px;
-            height: 100px;} 
-        div.block-ex-2-2{
-            z-index: 1;
-            position: absolute;
-            right: 0px;
-            box-sizing: border-box;
-            width: 300px;
-            height: 100px;
-            background-image: url(中正大學.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;}
+            }
         div.block-ex-3{
-            z-index: 2;
             position: absolute;
             top:260px;
-            left: 0px;
+            left: 0vw;
             box-sizing: border-box;
-            width: 100%;
+            width: auto;
             height: 100px;
-            display: flex;
-            justify-content: center;}
-        div.block-ex-3-1{
-            z-index: 1;
-            position: absolute;
-            left: 0px;
-            box-sizing: border-box;
-            width: 750px;
-            height: 100px; } 
-        div.block-ex-3-2{
-            z-index: 1;
-            position: absolute;
-            right: 0px;
-            box-sizing: border-box;
-            width: 300px;
-            height: 100px;
-            background-image: url(恩德集團.png);  
-            background-size: contain;
-            background-repeat: no-repeat;}
-        .where::after{
+            }
+        
+        #where {
+            font-family:'Noto Sans TC', cursive;
+            font-size: 1.2857em; /* 18/16 -> 18px */
+            font-weight: 300;
+            display: inline;
+            margin-right: 0.5em;}
+        #where::after{
             /* bullets */
             content: url(point.png);
             position: absolute;
-            left: 20px; /*adjust manually*/
-            top: 28px;}
-        .where::before{
+            left: 1.4vw; /*adjust manually*/
+            top: 4.5vh;}
+        #where::before{
             content:"";
             position: absolute;
-            left: 25px; /* adjust manually */
-            top:28px;
+            left: 1.7vw; /* adjust manually */
+            top:4.5vh;
             border-left: 1px solid gray;
             height: 100px;
-            width: 1px;}
+            width: 1vw;}
         
         
         div.block-text-2 {
-            z-index: 3;
-            position: absolute;
-            top: 680px;
+            position: relative;
+            top: 0vh;
             left: 0px;
-            height: auto;
-            width: 50%;}
+            height: 45vh;
+            width: auto;
+            border: 1px solid white;}
         .block-text-2::after{
             clear: both;}
         .block-text-2::before{
             clear: both;}
-        
         div.block-ed-1{
-            z-index: 2;
             position: absolute;
-            left: 0px;
-            height: 100px;
+            left: 0vw;
+            box-sizing: border-box;
+            height: auto;
             width: auto;}
         div.block-ed-2{
-            z-index: 2;
             position: absolute;
-            left: 0px;
+            left: 0vw;
             top:160px;
-            height: 100px;
+            box-sizing: border-box;
+            height: auto;
             width: auto;}
+        ul.education li.green{
+            list-style: none}
         
 
         div.block-text-3 {
             z-index: 3;
-            position: absolute;
-            top: 680px;
+            position: relative;
+            top: 0vh;
             right: 0px;
-            height: auto;
-            width: 50%;}
+            height: 40vh;
+            width: auto;
+            border: 1px solid white;}
         .block-text-3::after{
             clear: both;}
         .block-text-3::before{
             clear: both;}
-        
         div.block-aw-1{
             z-index: 2;
             position: absolute;
@@ -279,124 +206,126 @@
             top:160px;
             height: 100px;
             width: auto;}
+        ul.awards li.green{
+            list-style: none}
         
+        #mark{
+            font-weight: bold;
+            font-size:1.2857em;
 
+        }
+        #mark::after{
+            /* bullets */
+            content: url(point.png);
+            position: absolute;
+            left: 1.4vw; /*adjust manually*/
+            top: 4vh;}
+        
+        
     </style>
 </head>
 
 <body>
-    
-    <div class="block-title-1">
-        <div class="block-title"></div>
-        <div class="block-title-1-1">
-            <p> Everyone has their own time zone</p>
-        </div>
+    <div class="home">
+        <div id="logo"></div>
     </div>
-
-    <div class="block-content-1">
-        <div class="block-content-1-1">
-
-            <div class="block-photo-1">
-                <div class="block-photo-1-1">
-                    <div class="block-photo-1-1-1"></div>
-                </div>
-            </div>
-
-            <div class="block-photoinfo-1">
-                <p class="name">黃舜盈 | Shun-Ying, Huang</p>
-                <p class="title">Address</p>
-                <p class="subtitle">Tainan City, Taiwan</p>
-                <p class="title">E-mail:</p>
-                <p class="subtitle">tony01302005@gmail.com</p>
-            </div>
-
-            <div class="block-text-1">
-                <p class="title">Exprience</p>
-                <div class="block-ex-1">
-                    <div class="block-ex-1-1">
-                        <ul class="experiences">                            
-                            <li class="green">
-                              <div class="where" style="display: inline;">National Cheng Kung University</div><h3 class="what green" style="display: inline;">Project Assistant (Full-time)</h3><div class="when" style="display: inline;">&emsp;2021 - Present</div>
-                              <p class="description">Smart Manufacturing and Material Research Center</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="block-ex-1-2"></div>
-                </div>
-
-                <div class="block-ex-2">
-                    <div class="block-ex-2-1">
-                        <ul class="experiences">                            
-                            <li class="green">
-                              <div class="where" style="display: inline;">National Chung Cheng University</div><h3 class="what green" style="display: inline;">AFM Operator</h3><div class="when" style="display: inline;">&emsp;2018 - 2020</div>
-                              <p class="description">Instruments Center of CCU (IC-CCU) - Atomic Force Microscope, AFM</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="block-ex-2-2"></div> 
-                </div> 
-                
-                <div class="block-ex-3">
-                    <div class="block-ex-3-1">
-                        <ul class="experiences">                            
-                            <li class="green">
-                              <div class="where" style="display: inline;">Anderson Industrial Corp.</div><h3 class="what green" style="display: inline;">Intern</h3><div class="when" style="display: inline;">&emsp;2017 - 2018</div>
-                              <p class="description">Department of Electrical</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="block-ex-3-2"></div> 
-                </div> 
-            </div>
-            
-            
-            <div class="block-text-2">
-                <p class="title">Education</p>
-                
-                <div class="block-ed-1">
-                    <ul class="education">
-                        <li class="green">
-                            <div class="where">M.S. (Mechanical Engineering)</div>
-                            <p class="description">Department of Mechanical Engineering, National Chung Cheng University, Chiayi, Taiwan (R.O.C.)</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="block-ed-2">
-                    <ul class="education">
-                        <li class="green">
-                            <div class="where">B.S. (Mechanical Engineering)</div>
-                            <p class="description">Department of Mechanical Engineering, National United University, Miaoli, Taiwan (R.O.C.)</p>
-                        </li>
-                    </ul>
-                </div>
-
-
-            </div>
-
-            <div class="block-text-3">
-                <p class="title">Awards</p>
-                <div class="block-aw-1">
-                    <ul class="awards">
-                        <li class="green">
-                            <div class="where">Chinese Society of Mechanical Engineers (CSME)</div>
-                            <p class="description">2021 Distinguished Master's Thesis Award</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="block-aw-2">
-                    <ul class="awards">
-                        <li class="green">
-                            <div class="where">Ministry of Science and Technology (MOST)</div>
-                            <p class="description">2020 Future Tech Award - Smart Machinerynovel Materials</p>
-                        </li>
-                    </ul>
-                </div>
+    <div class="person">
+        <div id="frame">
+            <div class="filter">
+                <div id="photo"></div>
+            </div> 
+            <div id="phototext">
+                <p>TONY HUANG <br>黃舜盈</p>
             </div>
         </div>
-
+        <div id="contactinfo">Contact Detail
+            <a id="icon1" href="mailto:tony01302005@gmail.com" title="E-mail"></a>
+            <a id="icon2" href="https://pda.104.com.tw/profile/share/i5MWGMzDHUE4SL6NIE8LWioyG1tYpSkE" title="104人力銀行"> </a>
+            <a id="icon3" href="https://github.com/shunyinghuang" title="Github"></a>
+            <div id="icon4"></div>  
+        </div>   
     </div>
+    <div class="title"></div>
+    <div class="content">
+        <div class="block-text-1">
+            <p class="title">Exprience</p>
+            <div class="block-ex-1">
+                <div class="block-ex-1-1">
+                    <ul class="experiences">                            
+                        <li>
+                          <div id="where" style="display: inline;">National Cheng Kung University</div>
+                          <br><h3  style="display: inline;">Project Assistant (Full-time)</h3><div id="when" style="display: inline;">&emsp;2021 - Present</div>
+                          <p class="description">Smart Manufacturing and Material Research Center</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block-ex-2">
+                <div class="block-ex-2-1">
+                    <ul class="experiences">                            
+                        <li>
+                          <div id="where" style="display: inline;">National Chung Cheng University</div>
+                          <br><h3  style="display: inline;">AFM Operator</h3><div id="when" style="display: inline;">&emsp;2018 - 2020</div>
+                          <p class="description">Precision Instruments Center of CCU</p>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="block-ex-3">
+                <div class="block-ex-3-1">
+                    <ul class="experiences">                            
+                        <li>
+                          <div id="where" style="display: inline;">Anderson Industrial Corp.</div>
+                          <br><h3 style="display: inline;">Intern</h3><div id="when" style="display: inline;">&emsp;2017 - 2018</div>
+                          <p class="description">Department of Electrical</p>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="block-text-2">
+            <p class="title">Education</p>
+            
+            <div class="block-ed-1">
+                <ul class="education">
+                    <li class="green">
+                        <div  id="where">M.S. (Mechanical Engineering)</div>
+                        <p class="description">Department of Mechanical Engineering, National Chung Cheng University, Chiayi, Taiwan (R.O.C.)</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block-ed-2">
+                <ul class="education">
+                    <li class="green">
+                        <div id="where">B.S. (Mechanical Engineering)</div>
+                        <p class="description">Department of Mechanical Engineering, National United University, Miaoli, Taiwan (R.O.C.)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-text-3">
+            <p class="title">Awards</p>
+            <div class="block-aw-1">
+                <ul class="awards">
+                    <li>
+                        <div id="mark">2021 Distinguished Master's Thesis Award</div>
+                        <p class="description">Chinese Society of Mechanical Engineers (CSME)</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block-aw-2">
+                <ul class="awards">
+                    <li>
+                        <div id="mark">2020 Future Tech Award</div>
+                        <p class="description">Ministry of Science and Technology (MOST)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="space"></div> 
 </body>
 
 </html>
